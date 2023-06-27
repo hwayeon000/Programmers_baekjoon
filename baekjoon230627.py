@@ -75,26 +75,32 @@
 # print(total/div)
 
 
+# arr=[[0 for j in range(cols)] for i in range(rows)]
 
 # ========= 2738 행렬 덧셈 =========== 
-import sys
-cols,rows=map(int,sys.stdin.readline().split())
-arr=[[0 for j in range(cols)] for i in range(rows)]
-a=[[],[],[]]
-b=[[],[],[]]
-for i in range(cols):
-    n1,n2,n3=map(int,sys.stdin.readline().split())
-    a[i].append(n1)
-    a[i].append(n2)
-    a[i].append(n3)
-for i in range(cols):
-    n1,n2,n3=map(int,sys.stdin.readline().split())
-    b[i].append(n1)
-    b[i].append(n2)
-    b[i].append(n3)
-for i in range(cols):
-    for j in range(rows):
-        arr[i][j]=a[i][j]+b[i][j]
-print(arr)
+# cols,rows=map(int,input().split())
+# a=[]
+# b=[]
+# for i in range(cols):
+#     n_list=list(map(int,input().split()))
+#     a.append(n_list)
+# for i in range(cols):
+#     n_list=list(map(int,input().split()))
+#     b.append(n_list)
+# for i in range(cols):
+#     for j in range(rows):
+#         print(a[i][j]+b[i][j],end=' ')
+#     print()
+
+# ========= 2566 최댓값 =========== 
+arr=[]
+for i in range(9):
+    n=list(map(int,input().split()))
+    arr.append(n)
+num=max(map(max,arr))
+for i in arr:
+    if num in i:
+        print(i)
+
 
 
