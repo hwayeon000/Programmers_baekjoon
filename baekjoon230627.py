@@ -91,16 +91,3 @@
 #     for j in range(rows):
 #         print(a[i][j]+b[i][j],end=' ')
 #     print()
-
-# ========= 2566 최댓값 =========== 
-arr=[]
-for i in range(9):
-    n=list(map(int,input().split()))
-    arr.append(n)
-num=max(map(max,arr))
-for i in arr:
-    if num in i:
-        print(i)
-
-
-
